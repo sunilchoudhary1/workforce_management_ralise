@@ -1,0 +1,26 @@
+
+for create
+{
+  "requests": [
+    {
+      "reference_id": 115,
+      "reference_type": "ORDER",
+      "task": "CREATE_INVOICE",
+      "assignee_id": 1,
+      "priority": "HIGH",
+      "task_deadline_time": 98765432100
+    }
+  ]
+}
+  without assiginee
+  {
+    "requests": [
+      {
+        "reference_id": 125,
+        "reference_type": "ORDER",
+        "task": "CREATE_INVOICE",
+        "priority": "HIGH",
+        "task_deadline_time": 98765432100
+      }
+    ]
+  }
