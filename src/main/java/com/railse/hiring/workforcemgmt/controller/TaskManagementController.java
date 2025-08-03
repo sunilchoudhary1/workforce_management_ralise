@@ -46,9 +46,10 @@ public class TaskManagementController {
 
     // new features
     @PostMapping("/change-priority")
-    public Response<TaskManagementDto> changePriority(@RequestParam Long taskId, @RequestParam Priority priority) {
-        return new Response<>(taskManagementService.changeTaskPriority(taskId, priority));
+    public Response<TaskManagementDto> changePriority(@RequestBody ChangePriorityRequest request) {
+        return new Response<>(taskManagementService.changeTaskPriority(request));
     }
+
 
     @GetMapping("/priority/{priority}")
     public Response<List<TaskManagementDto>> getTasksByPriority(@PathVariable Priority priority) {

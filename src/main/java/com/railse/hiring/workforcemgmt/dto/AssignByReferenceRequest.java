@@ -11,4 +11,5 @@ public class AssignByReferenceRequest {
     private Long referenceId;
     private ReferenceType referenceType;
     private Long assigneeId;
+    private Long newDeadline;
 }

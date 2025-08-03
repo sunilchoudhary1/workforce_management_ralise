@@ -12,7 +12,7 @@ public interface TaskManagementService {
     List<TaskManagementDto> fetchTasksByDate(TaskFetchByDateRequest request);
     TaskManagementDto findTaskById(Long id);
     List<TaskManagementDto> getTasksByPriority(Priority priority);
-    TaskManagementDto changeTaskPriority(Long taskId, Priority priority);
+    TaskManagementDto changeTaskPriority(ChangePriorityRequest request);
     TaskManagementDto addComment(Long taskId, CommentRequest request);
     List<TaskManagementDto> getAllTasks();
 
